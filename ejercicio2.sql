@@ -135,7 +135,7 @@ select j.id_emp, j.nombre, count(*) as 'Num Empleados'
 	from departamentos d, empleados j 
 	where d.cod_director=j.cod_jefe
 	group by j.nombre
-	having Count(*)>=2 
+	having Count(*)>=2
     order by count(*);
 
 #26. Hallar los departamentos que no tienen empleados
